@@ -115,51 +115,91 @@ function Projects() {
 
       </motion.div>
 
-      {/* PROJECT 3 */}
-      <motion.div
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="grid md:grid-cols-2 gap-20 items-center mb-40"
+{/* PROJECT 3 */}
+<motion.div
+  initial={{ opacity: 0, y: 80 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  viewport={{ once: true }}
+  className="grid md:grid-cols-2 gap-20 items-center mb-40"
+>
+
+  {/* LEFT */}
+  <div>
+
+    <p className="uppercase tracking-[6px] text-sm text-cyan-300 mb-6">
+      Web Development
+    </p>
+
+    <h2 className="text-5xl md:text-7xl leading-none mb-8">
+      PrimeNest Realty
+    </h2>
+
+    <p className="text-gray-400 text-lg leading-relaxed mb-10">
+      A modern real estate website built with React and Tailwind CSS.
+      Features include a luxury landing page, property showcase,
+      responsive design, and smooth navigation.
+    </p>
+
+    <div className="flex gap-4">
+  <a
+    href="https://primenest-realty-olive.vercel.app/"
+    target="_blank"
+    rel="noreferrer"
+    className="bg-cyan-500 text-black px-6 py-3 rounded-full font-semibold"
+  >
+    Live Demo
+  </a>
+
+  <a
+    href="https://github.com/Londiwe123/primenest-realty"
+    target="_blank"
+    rel="noreferrer"
+    className="border border-white px-6 py-3 rounded-full"
+  >
+    GitHub
+  </a>
+</div>
+
+    <div className="flex gap-4">
+      <a
+        href="https://primenest-realty-olive.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
+        className="bg-cyan-500 text-black px-6 py-3 rounded-full font-semibold"
       >
+        Live Demo
+      </a>
 
-        {/* LEFT */}
-        <div>
+      <a
+        href="https://github.com/Londiwe123/primenest-realty"
+        target="_blank"
+        rel="noreferrer"
+        className="border border-white px-6 py-3 rounded-full"
+      >
+        GitHub
+      </a>
+    </div>
 
-          <p className="uppercase tracking-[6px] text-sm text-cyan-300 mb-6">
-            IT Support
-          </p>
+  </div>
 
-          <h2 className="text-5xl md:text-7xl leading-none mb-8">
-            System Troubleshooting
-          </h2>
+  {/* RIGHT */}
+  <div>
 
-          <p className="text-gray-400 text-lg leading-relaxed mb-10">
-            Hands-on experience with hardware and software
-            troubleshooting, Microsoft Office maintenance,
-            technical support, and system documentation.
-          </p>
+    <img
+      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0f?q=80&w=1200&auto=format&fit=crop"
+      alt="PrimeNest Realty"
+      className="
+      rounded-[40px]
+      h-[700px]
+      w-full
+      object-cover
+      "
+    />
 
-        </div>
+  </div>
 
-        {/* RIGHT */}
-        <div>
-
-          <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
-            alt=""
-            className="
-            rounded-[40px]
-            h-[700px]
-            w-full
-            object-cover
-            "
-          />
-
-        </div>
-
-      </motion.div>
+</motion.div>
 
     </div>
   );

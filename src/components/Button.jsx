@@ -1,10 +1,14 @@
-function Button({ text }) {
+function Button({ text, href }) {
   return (
-    <button
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
       className="
       group
       relative
       overflow-hidden
+      inline-block
       px-10
       py-4
       rounded-full
@@ -22,7 +26,6 @@ function Button({ text }) {
       hover:shadow-[0_0_40px_rgba(255,105,180,0.4)]
       "
     >
-
       <span className="relative z-10">
         {text}
       </span>
@@ -41,8 +44,7 @@ function Button({ text }) {
         duration-500
         "
       />
-
-    </button>
+    </a>
   );
 }
 
