@@ -141,11 +141,12 @@ function Projects() {
       responsive design, and smooth navigation.
     </p>
 
-    <div className="flex gap-4">
+    <div className="flex gap-4 relative z-50">
   <a
     href="https://primenest-realty-olive.vercel.app/"
     target="_blank"
     rel="noreferrer"
+    style={{ pointerEvents: "auto" }}
     className="bg-cyan-500 text-black px-6 py-3 rounded-full font-semibold"
   >
     Live Demo
@@ -159,27 +160,8 @@ function Projects() {
   >
     GitHub
   </a>
+
 </div>
-
-    <div className="flex gap-4">
-      <a
-        href="https://primenest-realty-olive.vercel.app/"
-        target="_blank"
-        rel="noreferrer"
-        className="bg-cyan-500 text-black px-6 py-3 rounded-full font-semibold"
-      >
-        Live Demo
-      </a>
-
-      <a
-        href="https://github.com/Londiwe123/primenest-realty"
-        target="_blank"
-        rel="noreferrer"
-        className="border border-white px-6 py-3 rounded-full"
-      >
-        GitHub
-      </a>
-    </div>
 
   </div>
 
